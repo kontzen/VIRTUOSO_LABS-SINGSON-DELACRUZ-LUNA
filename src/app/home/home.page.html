@@ -14,7 +14,19 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button (click)="addObject()">Add Object</ion-button><br>
+    <ion-button (click)="showObject()">Show Object</ion-button><br>
+    <ion-button (click)="authenticateButton()">Authenticate</ion-button><br>   
+    <ion-button (click)="FauthenticateButton()">Unauntheticate</ion-button>
+    
+    <div *ngIf = "isLoading"> {{loadingText}} </div>
+    <div *ngIf = "showObj">{{objectArray}}</div>
+    
+
+    <div>
+      <p>Dela Cruz, Clarence Selwyn</p>
+      <p>Singson, Ken Timothy</p>
+      <p>Luna, Viemon</p>
+    </div>
   </div>
 </ion-content>
