@@ -14,7 +14,13 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <strong>Select a Button<br /></strong>
+    <!--break to bring down buttons-->
+    <ion-button href="another">Go By Link</ion-button>
+    <!--button by event: please refer to goByEvent(); on home.page.ts-->
+    <ion-button (click)="goByEvent()">Go By Event</ion-button><br />
+    <!--button by event: please refer to goByEvent(); on home.page.ts-->
+    <ion-button (click)="goWithAuthorization()">Authenticate</ion-button>
+    <!--button by event: please refer to goWithAuthorization(); on home.page.ts-->
   </div>
 </ion-content>
